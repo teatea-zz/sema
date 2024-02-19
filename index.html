@@ -1,0 +1,35 @@
+/* Javascript 샘플 코드 */
+
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>서울시립미술관 소장품 정보 안내</title>
+  </head>
+  <body>
+    <script src="js/data.js"></script>
+    <script>
+      var xhr = new XMLHttpRequest();
+      var url =
+        'http://openapi.seoul.go.kr:8088/6453514970696d6136395450636f6c/json/SemaPsgudInfoKorInfo/1/3/'; /* URL */
+      xhr.open('GET', url);
+      xhr.onreadystatechange = function () {
+        if (this.readyState == xhr.DONE) {
+          // <== 정상적으로 준비되었을때
+          if (xhr.status == 200 || xhr.status == 201) {
+            // <== 호출 상태가 정상적일때
+            console.log(
+              'Status: ' +
+                this.status +
+                '\nHeaders: ' +
+                JSON.stringify(this.getAllResponseHeaders()) +
+                '\nBody: ' +
+                this.responseText
+            );
+          }
+        }
+      };
+      xhr.send('');
+    </script>
+  </body>
+</html>
