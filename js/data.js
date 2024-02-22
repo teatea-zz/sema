@@ -7015,3 +7015,30 @@ const data = {
 };
 
 console.log(data);
+
+const allData = data.DATA;
+
+// allData.forEach((data) => {
+//   console.log(data);
+// });
+
+// const result = allData.filter((number) => Number(number.manage_no_year) > 2022);
+// console.log(result);
+
+const result = allData.filter(
+  (number) =>
+    // (number.writr_nm = '한용진' && Number(number.manage_no_year) > 2022)
+    number.writr_nm === '한용진'
+);
+console.log(result);
+
+// data.DATA.forEach((item) => {
+//   console.log(item.writr_nm);
+// });
+
+// const itemsWith2024Year = data.DATA.filter(
+//   (item) => item.manage_no_year === '2024'
+// );
+// itemsWith2024Year.forEach((item) => {
+//   console.log(item);
+// });
