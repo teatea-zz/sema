@@ -7014,8 +7014,6 @@ const data = {
   ],
 };
 
-console.log(data);
-
 const allData = data.DATA;
 
 // allData.forEach((data) => {
