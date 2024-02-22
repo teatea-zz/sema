@@ -7,6 +7,19 @@
     <title>서울시립미술관 소장품 정보 안내</title>
   </head>
   <body>
+    <div class="wrapper">
+      <header>Header</header>
+      <section>Section</section>
+    </div>
+
+    <script>
+      const headerHeight = document.querySelector('header').offsetHeight;
+      const section = document.querySelector('section');
+
+      section.style.height = `calc(100vh - ${heightHeight}px)`;
+      section.style.marginTop = `&{headerHeight + 5}px`;
+    </script>
+
     <script src="js/data.js"></script>
     <script>
       var xhr = new XMLHttpRequest();
