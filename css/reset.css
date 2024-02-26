@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  color: #282828;
+  font-family: 'SUIT-Regular';
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 100%; /* 26px */
+  letter-spacing: -0.2px;
+}
+
+h4 {
+  overflow: hidden;
+  color: #282828;
+  text-overflow: ellipsis;
+  font-family: 'SUIT-Regular';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%; /* 18px */
+}
+
+.body1 {
+  color: #282828;
+  font-family: 'SUIT-Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.body4 {
+  overflow: hidden;
+  color: #282828;
+  text-overflow: ellipsis;
+  font-family: 'SUIT-Regular';
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 100%; /* 13px */
+}

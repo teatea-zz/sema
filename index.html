@@ -4,21 +4,70 @@
     <meta charset="UTF-8" />
     <title>서울시립미술관 소장품 정보 안내</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
   </head>
   <body>
     <div class="wrapper">
-      <header>Header</header>
-      <section>Section</section>
+      <header>
+        <img src="images/logo.svg" alt="logo" />
+        <div class="icon">
+          <img src="images/search.svg" alt="" />
+          <img src="images/menu.svg" alt="" />
+        </div>
+      </header>
+      <section>
+        <div class="hero">
+          <div class="img">
+            <img src="images/symbol_wh.svg" alt="" class="symbol_wh" />
+            <img src="images/main_image.png" alt="" class="main_image" />
+          </div>
+          <div class="hero_text">
+            <h2>소장품과 미술연구</h2>
+            <p class="body1">
+              소장품을 중심으로 한국현대미술사의 중요한 맥락을 밝히는 연구물을
+              생산하고 출판합니다. 서울시립미술관이 소장한 작품 6,110점을
+              살펴보세요.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="prdct-new">
+        <div class="line"></div>
+        <div class="badge">신 소장품</div>
+        <div class="container">
+          <div class="prdct-new-item-list">
+            <div class="prdct-new-item">
+              <img src="images/prdct_img_s.png" alt="" />
+              <h4>상품명</h4>
+              <p class="body4">작가명</p>
+              <p class="body4">제작년도</p>
+            </div>
+            <div class="prdct-new-item">
+              <img src="images/prdct_img_s.png" alt="" />
+              <h4>상품명</h4>
+              <p class="body4">작가명</p>
+              <p class="body4">제작년도</p>
+            </div>
+          </div>
+          <div class="prdct-new-item-list">
+            <div class="prdct-new-item">
+              <img src="images/prdct_img_s.png" alt="" />
+              <h4>상품명</h4>
+              <p class="body4">작가명</p>
+              <p class="body4">제작년도</p>
+            </div>
+            <div class="prdct-new-item">
+              <img src="images/prdct_img_s.png" alt="" />
+              <h4>상품명</h4>
+              <p class="body4">작가명</p>
+              <p class="body4">제작년도</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <script>
-      const headerHeight = document.querySelector('header').offsetHeight;
-      const section = document.querySelector('section');
-
-      section.style.height = `calc(100vh - ${heightHeight}px)`;
-      section.style.marginTop = `&{headerHeight + 5}px`;
-    </script>
-
+    <script src="js/custom.js"></script>
     <script src="js/data.js"></script>
     <script>
       var xhr = new XMLHttpRequest();
