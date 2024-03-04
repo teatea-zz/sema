@@ -89753,30 +89753,27 @@ const data = {
   ],
 };
 
-const dataAll = data.DATA;
-// console.log(dataAll);
+async function getSemadata(n) {
+  // const dataAll = data.DATA;
+  const dataAll = data.DATA.slice(0, n + 1);
 
-// dataAll.forEach((data) => {
-// console.log(data);
-// });
+  // dataAll.forEach((data) => {
+  // console.log(data);
+  // });
 
-const imgWrapper = document.querySelector('.prdct-new-item-list');
-dataAll.forEach((data) => {
-  console.log(data.thumb_image);
-  const itemelmt = `
-  <div class="prdct-new-item">
-  <img src="${data.thumb_image}" alt="" />
-  <h4>${data.prdct_nm_korean}</h4>
-  <p class="body4">${data.writr_nm}</p>
-  <p class="body4">${data.mnfct_year}</p>
-  </div>
-  `;
-  imgWrapper.insertAdjacentHTML('beforeend', itemelmt);
-});
+  const imgWrapper = document.querySelector('.prdct-new-item-list');
+  dataAll.forEach((data) => {
+    console.log(data.thumb_image);
+    const itemelmt = `
+    <div class="prdct-new-item">
+    <img src="${data.thumb_image}" alt="" />
+    <h4>${data.prdct_nm_korean}</h4>
+    <p class="body4">${data.writr_nm}</p>
+    <p class="body4">${data.mnfct_year}</p>
+    </div>
+    `;
+    imgWrapper.insertAdjacentHTML('beforeend', itemelmt);
+  });
+}
 
-// const writrNm = document.querySelector('.body4');
-// dataAll.forEach((data) => {
-//   console.log(data.writr_nm);
-//   const imgelmt = `<p>${data.writr_nm}</p>`;
-//   writrNm.insertAdjacentHTML('beforeend', imgelmt);
-// });
+getSemadata(3);

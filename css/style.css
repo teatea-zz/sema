@@ -88,13 +88,13 @@ section {
 .prdct-new-item-list {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 1.5rem;
   column-gap: 0.4375rem;
 }
 
 .prdct-new .prdct-new-item {
-  width: 50%;
   display: grid;
   row-gap: 6px;
   margin-top: 2.375rem;
@@ -106,7 +106,7 @@ section {
 
 .prdct-new .prdct-new-item > img {
   width: 168px;
-  height: 297px;
+  /* height: 297px; */
   background: #f2b45d;
 }
 
