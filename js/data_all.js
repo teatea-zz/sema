@@ -89771,7 +89771,7 @@ async function getSemadata(n) {
     dataAll.forEach((data) => {
       console.log(data.thumb_image);
       const itemelmt = `
-      <a href="/detail.html?nm=${data.prdct_nm_korean}">
+      <a href="./detail.html?nm=${data.prdct_nm_korean}">
         <div class="prdct-new-item">
         <img src="${data.thumb_image}" alt="" />
         <h4>${data.prdct_nm_korean}</h4>
