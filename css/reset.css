@@ -15,6 +15,16 @@ h2 {
   letter-spacing: -0.2px;
 }
 
+h3 {
+  overflow: hidden;
+  color: #282828;
+  text-overflow: ellipsis;
+  font-family: 'SUIT-Regular';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%; /* 20px */
+}
+
 h4 {
   overflow: hidden;
   color: #282828;
@@ -34,7 +44,6 @@ h4 {
 }
 
 .body2 {
-  width: 78px;
   overflow: hidden;
   color: #949494;
   text-overflow: ellipsis;
@@ -62,6 +71,22 @@ h4 {
   font-size: 13px;
   font-weight: 400;
   line-height: 100%; /* 13px */
+}
+
+.footerText {
+  color: #282828;
+  font-family: 'SUIT-Regular';
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 140%; /* 18.2px */
+}
+
+.footerText1 {
+  color: #282828;
+  font-family: 'SUIT-Regular';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
 }
 
 a {
